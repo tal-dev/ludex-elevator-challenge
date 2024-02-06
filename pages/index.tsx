@@ -3,16 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-// 10 floor building
-// Elevator can go up and down
-// Elevator can go to a specific floor
-// Display the current floor of the elevator
-// Display whether or not the elevator is moving
-// Display whether or not the elevator doors are open or closed
-// Tenants on a random floor will call the elevator every 10 seconds
-// When tenant requests elevator, they will choose if they are going up or down
-//
-
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
