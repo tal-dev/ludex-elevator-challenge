@@ -7,7 +7,6 @@ const Elevator = () => {
     const [currentFloor, setCurrentFloor] = useState(1)
     const [targetFloor, setTargetFloor] = useState(1);
     const [isMoving, setIsMoving] = useState(false)
-    const [tenantRequests, setTenantrequests] = useState([])
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -29,7 +28,6 @@ const Elevator = () => {
 
     return (
         <div className="container">
-            <Building floors={floors} currentFloor={currentFloor} setTargetFloor={setTargetFloor} />
             <Building floors={floors} currentFloor={currentFloor} setTargetFloor={setTargetFloor} />
             <Dashboard currentFloor={currentFloor} isMoving={isMoving} />
         </div>
