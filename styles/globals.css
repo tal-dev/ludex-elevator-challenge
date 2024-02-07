@@ -15,7 +15,7 @@ a {
   box-sizing: border-box;
 }
 
-.container {
+/* .container {
   display: flex;
 }
 
@@ -40,4 +40,4 @@ a {
   padding: 50px;
   border: 1px solid black;
   height: 300px;
-}
+} */

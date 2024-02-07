@@ -1,17 +1,17 @@
-import React from "react"
+import styles from "../styles/Home.module.css";
 
 type BuildingProps = {
     floors: number[],
     currentFloor: number,
-    setTargetFloor: (floor: number) => void 
+    handleFloorRequest: (floor: number) => void 
 }
 
-const Building = ({floors, currentFloor, setTargetFloor}: BuildingProps) => {
+const Building = ({floors, currentFloor, handleFloorRequest}: BuildingProps) => {
     return (
         <div>
             {floors.map(floor => {
-                return <div className={`floor ${currentFloor === floor && "currentFloor"}`} onClick={() => setTargetFloor(floor)}>
-                    <div className="floor-number">{floor}</div>
+                return <div className={`${styles.floor} ${currentFloor === floor && styles.currentFloor}`} onClick={() => handleFloorRequest(floor)}>
+                    <div>{floor}</div>
                 </div>
             })}
         </div>
