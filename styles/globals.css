@@ -14,3 +14,30 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+}
+
+.floor {
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.currentFloor {
+  background-color: aqua;
+}
+
+.dashboard {
+  font-size: 60px;
+  margin-left: 100px;
+  padding: 50px;
+  border: 1px solid black;
+  height: 300px;
+}
